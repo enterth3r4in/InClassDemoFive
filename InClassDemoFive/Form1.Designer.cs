@@ -57,7 +57,8 @@
             this.cb20 = new System.Windows.Forms.CheckBox();
             this.cb30 = new System.Windows.Forms.CheckBox();
             this.lbLocations = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEnterCity = new System.Windows.Forms.Button();
+            this.tbCityName = new System.Windows.Forms.TextBox();
             this.gbShipping.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -333,22 +334,30 @@
             this.lbLocations.TabIndex = 25;
             this.lbLocations.SelectedIndexChanged += new System.EventHandler(this.lbLocations_SelectedIndexChanged);
             // 
-            // button1
+            // btnEnterCity
             // 
-            this.button1.Location = new System.Drawing.Point(198, 343);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 51);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnEnterCity.Location = new System.Drawing.Point(198, 306);
+            this.btnEnterCity.Name = "btnEnterCity";
+            this.btnEnterCity.Size = new System.Drawing.Size(106, 32);
+            this.btnEnterCity.TabIndex = 26;
+            this.btnEnterCity.Text = "Enter City";
+            this.btnEnterCity.UseVisualStyleBackColor = true;
+            this.btnEnterCity.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // tbCityName
+            // 
+            this.tbCityName.Location = new System.Drawing.Point(310, 313);
+            this.tbCityName.Name = "tbCityName";
+            this.tbCityName.Size = new System.Drawing.Size(100, 20);
+            this.tbCityName.TabIndex = 27;
             // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(432, 559);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tbCityName);
+            this.Controls.Add(this.btnEnterCity);
             this.Controls.Add(this.lbLocations);
             this.Controls.Add(this.cb30);
             this.Controls.Add(this.cb20);
@@ -417,7 +426,8 @@
         private System.Windows.Forms.CheckBox cb20;
         private System.Windows.Forms.CheckBox cb30;
         private System.Windows.Forms.ListBox lbLocations;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEnterCity;
+        private System.Windows.Forms.TextBox tbCityName;
     }
 }
 

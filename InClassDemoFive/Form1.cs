@@ -144,10 +144,18 @@ namespace InClassDemoFive
         private void button1_Click(object sender, EventArgs e)
         {
             int index = 0;
-            while(index < 3)
-            {
+            int limit = int.Parse(tbCityName.Text);
 
+            while(index < limit)
+            {
                 index++;
+                MessageBox.Show("Running " + index);
+                lbLocations.Items.Add(index.ToString());
+            }
+            for(int i = 0; i < limit; i++)
+            {
+                MessageBox.Show("Running " + i);
+                lbLocations.Items.Add(i.ToString());
             }
         }
     }
