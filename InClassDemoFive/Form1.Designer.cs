@@ -46,6 +46,12 @@
             this.tbNumberOne = new System.Windows.Forms.TextBox();
             this.lblNumberTwo = new System.Windows.Forms.Label();
             this.lblNumberOne = new System.Windows.Forms.Label();
+            this.gbShipping = new System.Windows.Forms.GroupBox();
+            this.rbUSPS = new System.Windows.Forms.RadioButton();
+            this.rbUPS = new System.Windows.Forms.RadioButton();
+            this.rbFedEx = new System.Windows.Forms.RadioButton();
+            this.btnShippingMethod = new System.Windows.Forms.Button();
+            this.gbShipping.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblRedWings
@@ -94,7 +100,7 @@
             // 
             this.btnExitProgram.Location = new System.Drawing.Point(12, 521);
             this.btnExitProgram.Name = "btnExitProgram";
-            this.btnExitProgram.Size = new System.Drawing.Size(169, 26);
+            this.btnExitProgram.Size = new System.Drawing.Size(409, 26);
             this.btnExitProgram.TabIndex = 5;
             this.btnExitProgram.Text = "Exit Program";
             this.btnExitProgram.UseVisualStyleBackColor = true;
@@ -200,11 +206,69 @@
             this.lblNumberOne.TabIndex = 13;
             this.lblNumberOne.Text = "Number One:";
             // 
+            // gbShipping
+            // 
+            this.gbShipping.Controls.Add(this.rbFedEx);
+            this.gbShipping.Controls.Add(this.rbUPS);
+            this.gbShipping.Controls.Add(this.rbUSPS);
+            this.gbShipping.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbShipping.Location = new System.Drawing.Point(210, 12);
+            this.gbShipping.Name = "gbShipping";
+            this.gbShipping.Size = new System.Drawing.Size(94, 129);
+            this.gbShipping.TabIndex = 18;
+            this.gbShipping.TabStop = false;
+            this.gbShipping.Text = "Shipping";
+            // 
+            // rbUSPS
+            // 
+            this.rbUSPS.AutoSize = true;
+            this.rbUSPS.Location = new System.Drawing.Point(11, 32);
+            this.rbUSPS.Name = "rbUSPS";
+            this.rbUSPS.Size = new System.Drawing.Size(71, 24);
+            this.rbUSPS.TabIndex = 0;
+            this.rbUSPS.TabStop = true;
+            this.rbUSPS.Text = "USPS";
+            this.rbUSPS.UseVisualStyleBackColor = true;
+            // 
+            // rbUPS
+            // 
+            this.rbUPS.AutoSize = true;
+            this.rbUPS.Location = new System.Drawing.Point(11, 62);
+            this.rbUPS.Name = "rbUPS";
+            this.rbUPS.Size = new System.Drawing.Size(60, 24);
+            this.rbUPS.TabIndex = 1;
+            this.rbUPS.TabStop = true;
+            this.rbUPS.Text = "UPS";
+            this.rbUPS.UseVisualStyleBackColor = true;
+            // 
+            // rbFedEx
+            // 
+            this.rbFedEx.AutoSize = true;
+            this.rbFedEx.Location = new System.Drawing.Point(11, 92);
+            this.rbFedEx.Name = "rbFedEx";
+            this.rbFedEx.Size = new System.Drawing.Size(73, 24);
+            this.rbFedEx.TabIndex = 2;
+            this.rbFedEx.TabStop = true;
+            this.rbFedEx.Text = "FedEx";
+            this.rbFedEx.UseVisualStyleBackColor = true;
+            // 
+            // btnShippingMethod
+            // 
+            this.btnShippingMethod.Location = new System.Drawing.Point(310, 25);
+            this.btnShippingMethod.Name = "btnShippingMethod";
+            this.btnShippingMethod.Size = new System.Drawing.Size(111, 51);
+            this.btnShippingMethod.TabIndex = 19;
+            this.btnShippingMethod.Text = "Method of Shipment";
+            this.btnShippingMethod.UseVisualStyleBackColor = true;
+            this.btnShippingMethod.Click += new System.EventHandler(this.btnShippingMethod_Click);
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(193, 559);
+            this.ClientSize = new System.Drawing.Size(432, 559);
+            this.Controls.Add(this.btnShippingMethod);
+            this.Controls.Add(this.gbShipping);
             this.Controls.Add(this.btnTransferNumber);
             this.Controls.Add(this.tbNumberTwo);
             this.Controls.Add(this.tbNumberOne);
@@ -227,6 +291,8 @@
             this.Name = "formMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "In Class Week 5";
+            this.gbShipping.ResumeLayout(false);
+            this.gbShipping.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,6 +318,11 @@
         private System.Windows.Forms.TextBox tbNumberOne;
         private System.Windows.Forms.Label lblNumberTwo;
         private System.Windows.Forms.Label lblNumberOne;
+        private System.Windows.Forms.GroupBox gbShipping;
+        private System.Windows.Forms.RadioButton rbFedEx;
+        private System.Windows.Forms.RadioButton rbUPS;
+        private System.Windows.Forms.RadioButton rbUSPS;
+        private System.Windows.Forms.Button btnShippingMethod;
     }
 }
 

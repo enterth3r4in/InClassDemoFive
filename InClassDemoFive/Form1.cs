@@ -60,8 +60,19 @@ namespace InClassDemoFive
             }
             else
             {
+                tbNumberTwo.Text = tempDoubleStorage.ToString();
                 MessageBox.Show("Transfer failed and aborted!");
             }
+        }
+
+        private void btnShippingMethod_Click(object sender, EventArgs e)
+        {
+            if (rbUSPS.Checked == true)
+                MessageBox.Show("United States Postal Service is selected!");
+            else if (rbUPS.Checked == true)
+                MessageBox.Show("United Parcel Service is selected!");
+            else if(rbFedEx.Checked == true)
+                MessageBox.Show("Federal Express is selected!");
         }
     }
 }
