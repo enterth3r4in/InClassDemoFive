@@ -39,5 +39,29 @@ namespace InClassDemoFive
         {
             Application.Exit();
         }
+
+        private void btnCompareStrings_Click(object sender, EventArgs e)
+        {
+            if (tbThingOne.Text.ToLower() != tbThingTwo.Text.ToLower())
+                MessageBox.Show("These are not the same things");
+            else if (tbThingOne.Text.ToLower() != tbThingTwo.Text.ToLower() || tbThingTwo.Text.ToLower() == "kale")
+                MessageBox.Show("These are not the same or Thing Two is a SUPERFOOD!");
+            else
+                MessageBox.Show("These are the same thing");
+        }
+
+        private void btnTransferNumber_Click(object sender, EventArgs e)
+        {
+            double tempDoubleStorage = 0.0;
+            if(double.TryParse(tbNumberOne.Text, out tempDoubleStorage))
+            {
+                tbNumberTwo.Text = tempDoubleStorage.ToString();
+                MessageBox.Show("Transfer complete!");
+            }
+            else
+            {
+                MessageBox.Show("Transfer failed and aborted!");
+            }
+        }
     }
 }

@@ -41,6 +41,11 @@
             this.tbThingOne = new System.Windows.Forms.TextBox();
             this.tbThingTwo = new System.Windows.Forms.TextBox();
             this.btnCompareStrings = new System.Windows.Forms.Button();
+            this.btnTransferNumber = new System.Windows.Forms.Button();
+            this.tbNumberTwo = new System.Windows.Forms.TextBox();
+            this.tbNumberOne = new System.Windows.Forms.TextBox();
+            this.lblNumberTwo = new System.Windows.Forms.Label();
+            this.lblNumberOne = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblRedWings
@@ -87,9 +92,9 @@
             // 
             // btnExitProgram
             // 
-            this.btnExitProgram.Location = new System.Drawing.Point(12, 496);
+            this.btnExitProgram.Location = new System.Drawing.Point(12, 521);
             this.btnExitProgram.Name = "btnExitProgram";
-            this.btnExitProgram.Size = new System.Drawing.Size(102, 51);
+            this.btnExitProgram.Size = new System.Drawing.Size(169, 26);
             this.btnExitProgram.TabIndex = 5;
             this.btnExitProgram.Text = "Exit Program";
             this.btnExitProgram.UseVisualStyleBackColor = true;
@@ -145,18 +150,66 @@
             // 
             // btnCompareStrings
             // 
-            this.btnCompareStrings.Location = new System.Drawing.Point(37, 314);
+            this.btnCompareStrings.Location = new System.Drawing.Point(37, 301);
             this.btnCompareStrings.Name = "btnCompareStrings";
             this.btnCompareStrings.Size = new System.Drawing.Size(102, 51);
             this.btnCompareStrings.TabIndex = 12;
             this.btnCompareStrings.Text = "Compare Strings";
             this.btnCompareStrings.UseVisualStyleBackColor = true;
+            this.btnCompareStrings.Click += new System.EventHandler(this.btnCompareStrings_Click);
+            // 
+            // btnTransferNumber
+            // 
+            this.btnTransferNumber.Location = new System.Drawing.Point(37, 444);
+            this.btnTransferNumber.Name = "btnTransferNumber";
+            this.btnTransferNumber.Size = new System.Drawing.Size(102, 51);
+            this.btnTransferNumber.TabIndex = 17;
+            this.btnTransferNumber.Text = "Transfer Number";
+            this.btnTransferNumber.UseVisualStyleBackColor = true;
+            this.btnTransferNumber.Click += new System.EventHandler(this.btnTransferNumber_Click);
+            // 
+            // tbNumberTwo
+            // 
+            this.tbNumberTwo.Location = new System.Drawing.Point(93, 400);
+            this.tbNumberTwo.Name = "tbNumberTwo";
+            this.tbNumberTwo.Size = new System.Drawing.Size(65, 20);
+            this.tbNumberTwo.TabIndex = 16;
+            // 
+            // tbNumberOne
+            // 
+            this.tbNumberOne.Location = new System.Drawing.Point(93, 374);
+            this.tbNumberOne.Name = "tbNumberOne";
+            this.tbNumberOne.Size = new System.Drawing.Size(65, 20);
+            this.tbNumberOne.TabIndex = 15;
+            // 
+            // lblNumberTwo
+            // 
+            this.lblNumberTwo.AutoSize = true;
+            this.lblNumberTwo.Location = new System.Drawing.Point(12, 403);
+            this.lblNumberTwo.Name = "lblNumberTwo";
+            this.lblNumberTwo.Size = new System.Drawing.Size(71, 13);
+            this.lblNumberTwo.TabIndex = 14;
+            this.lblNumberTwo.Text = "Number Two:";
+            // 
+            // lblNumberOne
+            // 
+            this.lblNumberOne.AutoSize = true;
+            this.lblNumberOne.Location = new System.Drawing.Point(12, 377);
+            this.lblNumberOne.Name = "lblNumberOne";
+            this.lblNumberOne.Size = new System.Drawing.Size(70, 13);
+            this.lblNumberOne.TabIndex = 13;
+            this.lblNumberOne.Text = "Number One:";
             // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(193, 559);
+            this.Controls.Add(this.btnTransferNumber);
+            this.Controls.Add(this.tbNumberTwo);
+            this.Controls.Add(this.tbNumberOne);
+            this.Controls.Add(this.lblNumberTwo);
+            this.Controls.Add(this.lblNumberOne);
             this.Controls.Add(this.btnCompareStrings);
             this.Controls.Add(this.tbThingTwo);
             this.Controls.Add(this.tbThingOne);
@@ -194,6 +247,11 @@
         private System.Windows.Forms.TextBox tbThingOne;
         private System.Windows.Forms.TextBox tbThingTwo;
         private System.Windows.Forms.Button btnCompareStrings;
+        private System.Windows.Forms.Button btnTransferNumber;
+        private System.Windows.Forms.TextBox tbNumberTwo;
+        private System.Windows.Forms.TextBox tbNumberOne;
+        private System.Windows.Forms.Label lblNumberTwo;
+        private System.Windows.Forms.Label lblNumberOne;
     }
 }
 
