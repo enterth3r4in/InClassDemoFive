@@ -15,12 +15,12 @@ namespace InClassDemoFive
         public formMain()
         {
             InitializeComponent();
-            lbLocations.Items.Add("Seattle, WA");
-            lbLocations.Items.Add("Boston, MA");
-            lbLocations.Items.Add("Chicago, IL");
-            lbLocations.Items.Add("Portland, OR");
-            lbLocations.Items.Add("Los Angeles, CA");
-            lbLocations.Items.Add("Miami, FL");
+            //lbLocations.Items.Add("Seattle, WA");
+            //lbLocations.Items.Add("Boston, MA");
+            //lbLocations.Items.Add("Chicago, IL");
+            //lbLocations.Items.Add("Portland, OR");
+            //lbLocations.Items.Add("Los Angeles, CA");
+            //lbLocations.Items.Add("Miami, FL");
         }
 
         private double add_checkboxes()
@@ -141,6 +141,7 @@ namespace InClassDemoFive
                 + "' at index " + lbLocations.SelectedIndex.ToString());
         }
 
+        /*
         private void button1_Click(object sender, EventArgs e)
         {
             int index = 0;
@@ -148,14 +149,32 @@ namespace InClassDemoFive
 
             while(index < limit)
             {
-                index++;
                 MessageBox.Show("Running " + index);
                 lbLocations.Items.Add(index.ToString());
+                index++;
             }
             for(int i = 0; i < limit; i++)
             {
                 MessageBox.Show("Running " + i);
                 lbLocations.Items.Add(i.ToString());
+            }
+        }
+         */
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            const int START_SPEED = 60;
+            const int END_SPEED = 130;
+            const int INTERVAL = 10;
+            const double CONVERSION_FACTOR = 0.6214;
+
+            int kph;
+            double mph;
+
+            for(kph = START_SPEED; kph <= END_SPEED; kph += INTERVAL)
+            {
+                mph = kph * CONVERSION_FACTOR;
+                lbLocations.Items.Add(kph + " KPH is the same as " + mph + " MPH");
             }
         }
     }
