@@ -15,6 +15,29 @@ namespace InClassDemoFive
         public formMain()
         {
             InitializeComponent();
+            lbLocations.Items.Add("Seattle, WA");
+            lbLocations.Items.Add("Boston, MA");
+            lbLocations.Items.Add("Chicago, IL");
+            lbLocations.Items.Add("Portland, OR");
+            lbLocations.Items.Add("Los Angeles, CA");
+            lbLocations.Items.Add("Miami, FL");
+        }
+
+        private double add_checkboxes()
+        {
+            double totalValue = 0.0;
+            if (cb00.Checked)
+                totalValue += 0.0;
+            if (cb10.Checked)
+                totalValue += 1.0;
+            if (cb20.Checked)
+                totalValue += 2.0;
+            if (cb30.Checked)
+                totalValue += 3.0;
+            if (cb40.Checked)
+                totalValue += 4.0;
+ 
+            return totalValue;
         }
 
         private void btnWhoWins_Click(object sender, EventArgs e)
@@ -67,12 +90,65 @@ namespace InClassDemoFive
 
         private void btnShippingMethod_Click(object sender, EventArgs e)
         {
-            if (rbUSPS.Checked == true)
+            if (rbUSPS.Checked)
                 MessageBox.Show("United States Postal Service is selected!");
-            else if (rbUPS.Checked == true)
+            else if (rbUPS.Checked)
                 MessageBox.Show("United Parcel Service is selected!");
-            else if(rbFedEx.Checked == true)
+            else if (rbFedEx.Checked)
                 MessageBox.Show("Federal Express is selected!");
+            else
+                MessageBox.Show("Don't be dumb. Select something first!");
+        }
+
+        private void cb40_CheckedChanged(object sender, EventArgs e)
+        {
+            double totalValue = 0.0;
+            totalValue = add_checkboxes();
+            MessageBox.Show("Total Checked: " + totalValue);
+        }
+
+        private void cb30_CheckedChanged(object sender, EventArgs e)
+        {
+            double totalValue = 0.0;
+            totalValue = add_checkboxes();
+            MessageBox.Show("Total Checked: " + totalValue);
+        }
+
+        private void cb20_CheckedChanged(object sender, EventArgs e)
+        {
+            double totalValue = 0.0;
+            totalValue = add_checkboxes();
+            MessageBox.Show("Total Checked: " + totalValue);
+        }
+
+        private void cb10_CheckedChanged(object sender, EventArgs e)
+        {
+            double totalValue = 0.0;
+            totalValue = add_checkboxes();
+            MessageBox.Show("Total Checked: " + totalValue);
+        }
+
+        private void cb00_CheckedChanged(object sender, EventArgs e)
+        {
+            double totalValue = 0.0;
+            totalValue = add_checkboxes();
+            MessageBox.Show("Total Checked: " + totalValue);
+        }
+
+        private void lbLocations_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("You selected '" + lbLocations.SelectedItem.ToString() 
+                + "' at index " + lbLocations.SelectedIndex.ToString());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int index = 0;
+            while(index < 3)
+            {
+
+                index++;
+            }
         }
     }
 }

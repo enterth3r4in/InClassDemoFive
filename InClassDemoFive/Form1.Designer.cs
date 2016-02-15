@@ -47,10 +47,17 @@
             this.lblNumberTwo = new System.Windows.Forms.Label();
             this.lblNumberOne = new System.Windows.Forms.Label();
             this.gbShipping = new System.Windows.Forms.GroupBox();
-            this.rbUSPS = new System.Windows.Forms.RadioButton();
-            this.rbUPS = new System.Windows.Forms.RadioButton();
             this.rbFedEx = new System.Windows.Forms.RadioButton();
+            this.rbUPS = new System.Windows.Forms.RadioButton();
+            this.rbUSPS = new System.Windows.Forms.RadioButton();
             this.btnShippingMethod = new System.Windows.Forms.Button();
+            this.cb40 = new System.Windows.Forms.CheckBox();
+            this.cb00 = new System.Windows.Forms.CheckBox();
+            this.cb10 = new System.Windows.Forms.CheckBox();
+            this.cb20 = new System.Windows.Forms.CheckBox();
+            this.cb30 = new System.Windows.Forms.CheckBox();
+            this.lbLocations = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.gbShipping.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -219,16 +226,16 @@
             this.gbShipping.TabStop = false;
             this.gbShipping.Text = "Shipping";
             // 
-            // rbUSPS
+            // rbFedEx
             // 
-            this.rbUSPS.AutoSize = true;
-            this.rbUSPS.Location = new System.Drawing.Point(11, 32);
-            this.rbUSPS.Name = "rbUSPS";
-            this.rbUSPS.Size = new System.Drawing.Size(71, 24);
-            this.rbUSPS.TabIndex = 0;
-            this.rbUSPS.TabStop = true;
-            this.rbUSPS.Text = "USPS";
-            this.rbUSPS.UseVisualStyleBackColor = true;
+            this.rbFedEx.AutoSize = true;
+            this.rbFedEx.Location = new System.Drawing.Point(11, 92);
+            this.rbFedEx.Name = "rbFedEx";
+            this.rbFedEx.Size = new System.Drawing.Size(73, 24);
+            this.rbFedEx.TabIndex = 2;
+            this.rbFedEx.TabStop = true;
+            this.rbFedEx.Text = "FedEx";
+            this.rbFedEx.UseVisualStyleBackColor = true;
             // 
             // rbUPS
             // 
@@ -241,16 +248,16 @@
             this.rbUPS.Text = "UPS";
             this.rbUPS.UseVisualStyleBackColor = true;
             // 
-            // rbFedEx
+            // rbUSPS
             // 
-            this.rbFedEx.AutoSize = true;
-            this.rbFedEx.Location = new System.Drawing.Point(11, 92);
-            this.rbFedEx.Name = "rbFedEx";
-            this.rbFedEx.Size = new System.Drawing.Size(73, 24);
-            this.rbFedEx.TabIndex = 2;
-            this.rbFedEx.TabStop = true;
-            this.rbFedEx.Text = "FedEx";
-            this.rbFedEx.UseVisualStyleBackColor = true;
+            this.rbUSPS.AutoSize = true;
+            this.rbUSPS.Location = new System.Drawing.Point(11, 32);
+            this.rbUSPS.Name = "rbUSPS";
+            this.rbUSPS.Size = new System.Drawing.Size(71, 24);
+            this.rbUSPS.TabIndex = 0;
+            this.rbUSPS.TabStop = true;
+            this.rbUSPS.Text = "USPS";
+            this.rbUSPS.UseVisualStyleBackColor = true;
             // 
             // btnShippingMethod
             // 
@@ -262,11 +269,92 @@
             this.btnShippingMethod.UseVisualStyleBackColor = true;
             this.btnShippingMethod.Click += new System.EventHandler(this.btnShippingMethod_Click);
             // 
+            // cb40
+            // 
+            this.cb40.AutoSize = true;
+            this.cb40.Location = new System.Drawing.Point(198, 165);
+            this.cb40.Name = "cb40";
+            this.cb40.Size = new System.Drawing.Size(41, 17);
+            this.cb40.TabIndex = 20;
+            this.cb40.Text = "4.0";
+            this.cb40.UseVisualStyleBackColor = true;
+            this.cb40.CheckedChanged += new System.EventHandler(this.cb40_CheckedChanged);
+            // 
+            // cb00
+            // 
+            this.cb00.AutoSize = true;
+            this.cb00.Location = new System.Drawing.Point(386, 165);
+            this.cb00.Name = "cb00";
+            this.cb00.Size = new System.Drawing.Size(41, 17);
+            this.cb00.TabIndex = 21;
+            this.cb00.Text = "0.0";
+            this.cb00.UseVisualStyleBackColor = true;
+            this.cb00.CheckedChanged += new System.EventHandler(this.cb00_CheckedChanged);
+            // 
+            // cb10
+            // 
+            this.cb10.AutoSize = true;
+            this.cb10.Location = new System.Drawing.Point(339, 165);
+            this.cb10.Name = "cb10";
+            this.cb10.Size = new System.Drawing.Size(41, 17);
+            this.cb10.TabIndex = 22;
+            this.cb10.Text = "1.0";
+            this.cb10.UseVisualStyleBackColor = true;
+            this.cb10.CheckedChanged += new System.EventHandler(this.cb10_CheckedChanged);
+            // 
+            // cb20
+            // 
+            this.cb20.AutoSize = true;
+            this.cb20.Location = new System.Drawing.Point(292, 165);
+            this.cb20.Name = "cb20";
+            this.cb20.Size = new System.Drawing.Size(41, 17);
+            this.cb20.TabIndex = 23;
+            this.cb20.Text = "2.0";
+            this.cb20.UseVisualStyleBackColor = true;
+            this.cb20.CheckedChanged += new System.EventHandler(this.cb20_CheckedChanged);
+            // 
+            // cb30
+            // 
+            this.cb30.AutoSize = true;
+            this.cb30.Location = new System.Drawing.Point(245, 165);
+            this.cb30.Name = "cb30";
+            this.cb30.Size = new System.Drawing.Size(41, 17);
+            this.cb30.TabIndex = 24;
+            this.cb30.Text = "3.0";
+            this.cb30.UseVisualStyleBackColor = true;
+            this.cb30.CheckedChanged += new System.EventHandler(this.cb30_CheckedChanged);
+            // 
+            // lbLocations
+            // 
+            this.lbLocations.FormattingEnabled = true;
+            this.lbLocations.Location = new System.Drawing.Point(198, 218);
+            this.lbLocations.Name = "lbLocations";
+            this.lbLocations.Size = new System.Drawing.Size(135, 82);
+            this.lbLocations.TabIndex = 25;
+            this.lbLocations.SelectedIndexChanged += new System.EventHandler(this.lbLocations_SelectedIndexChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(198, 343);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 51);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(432, 559);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lbLocations);
+            this.Controls.Add(this.cb30);
+            this.Controls.Add(this.cb20);
+            this.Controls.Add(this.cb10);
+            this.Controls.Add(this.cb00);
+            this.Controls.Add(this.cb40);
             this.Controls.Add(this.btnShippingMethod);
             this.Controls.Add(this.gbShipping);
             this.Controls.Add(this.btnTransferNumber);
@@ -323,6 +411,13 @@
         private System.Windows.Forms.RadioButton rbUPS;
         private System.Windows.Forms.RadioButton rbUSPS;
         private System.Windows.Forms.Button btnShippingMethod;
+        private System.Windows.Forms.CheckBox cb40;
+        private System.Windows.Forms.CheckBox cb00;
+        private System.Windows.Forms.CheckBox cb10;
+        private System.Windows.Forms.CheckBox cb20;
+        private System.Windows.Forms.CheckBox cb30;
+        private System.Windows.Forms.ListBox lbLocations;
+        private System.Windows.Forms.Button button1;
     }
 }
 
