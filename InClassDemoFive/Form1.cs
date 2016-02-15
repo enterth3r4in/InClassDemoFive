@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace InClassDemoFive
 {
-    public partial class Form1 : Form
+    public partial class formMain : Form
     {
-        public Form1()
+        public formMain()
         {
             InitializeComponent();
+        }
+
+        private void btnWhoWins_Click(object sender, EventArgs e)
+        {
+            if()
+            {
+
+            }
         }
     }
 }
