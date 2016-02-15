@@ -34,6 +34,13 @@
             this.tbIslandersScore = new System.Windows.Forms.TextBox();
             this.btnWhoWins = new System.Windows.Forms.Button();
             this.btnExitProgram = new System.Windows.Forms.Button();
+            this.tbGameNumber = new System.Windows.Forms.TextBox();
+            this.lblGameNumber = new System.Windows.Forms.Label();
+            this.lblThingOne = new System.Windows.Forms.Label();
+            this.lblThingTwo = new System.Windows.Forms.Label();
+            this.tbThingOne = new System.Windows.Forms.TextBox();
+            this.tbThingTwo = new System.Windows.Forms.TextBox();
+            this.btnCompareStrings = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblRedWings
@@ -47,7 +54,7 @@
             // 
             // tbRedWingScore
             // 
-            this.tbRedWingScore.Location = new System.Drawing.Point(78, 41);
+            this.tbRedWingScore.Location = new System.Drawing.Point(93, 41);
             this.tbRedWingScore.Name = "tbRedWingScore";
             this.tbRedWingScore.Size = new System.Drawing.Size(65, 20);
             this.tbRedWingScore.TabIndex = 1;
@@ -57,22 +64,22 @@
             this.lblIslanders.AutoSize = true;
             this.lblIslanders.Location = new System.Drawing.Point(12, 70);
             this.lblIslanders.Name = "lblIslanders";
-            this.lblIslanders.Size = new System.Drawing.Size(49, 13);
+            this.lblIslanders.Size = new System.Drawing.Size(52, 13);
             this.lblIslanders.TabIndex = 2;
-            this.lblIslanders.Text = "Islanders";
+            this.lblIslanders.Text = "Islanders:";
             // 
             // tbIslandersScore
             // 
-            this.tbIslandersScore.Location = new System.Drawing.Point(78, 67);
+            this.tbIslandersScore.Location = new System.Drawing.Point(93, 67);
             this.tbIslandersScore.Name = "tbIslandersScore";
             this.tbIslandersScore.Size = new System.Drawing.Size(65, 20);
             this.tbIslandersScore.TabIndex = 3;
             // 
             // btnWhoWins
             // 
-            this.btnWhoWins.Location = new System.Drawing.Point(12, 227);
+            this.btnWhoWins.Location = new System.Drawing.Point(37, 147);
             this.btnWhoWins.Name = "btnWhoWins";
-            this.btnWhoWins.Size = new System.Drawing.Size(75, 23);
+            this.btnWhoWins.Size = new System.Drawing.Size(102, 51);
             this.btnWhoWins.TabIndex = 4;
             this.btnWhoWins.Text = "Who wins?";
             this.btnWhoWins.UseVisualStyleBackColor = true;
@@ -80,18 +87,83 @@
             // 
             // btnExitProgram
             // 
-            this.btnExitProgram.Location = new System.Drawing.Point(197, 227);
+            this.btnExitProgram.Location = new System.Drawing.Point(12, 496);
             this.btnExitProgram.Name = "btnExitProgram";
-            this.btnExitProgram.Size = new System.Drawing.Size(75, 23);
+            this.btnExitProgram.Size = new System.Drawing.Size(102, 51);
             this.btnExitProgram.TabIndex = 5;
             this.btnExitProgram.Text = "Exit Program";
             this.btnExitProgram.UseVisualStyleBackColor = true;
+            this.btnExitProgram.Click += new System.EventHandler(this.btnExitProgram_Click_1);
+            // 
+            // tbGameNumber
+            // 
+            this.tbGameNumber.Location = new System.Drawing.Point(93, 93);
+            this.tbGameNumber.Name = "tbGameNumber";
+            this.tbGameNumber.Size = new System.Drawing.Size(65, 20);
+            this.tbGameNumber.TabIndex = 6;
+            // 
+            // lblGameNumber
+            // 
+            this.lblGameNumber.AutoSize = true;
+            this.lblGameNumber.Location = new System.Drawing.Point(9, 96);
+            this.lblGameNumber.Name = "lblGameNumber";
+            this.lblGameNumber.Size = new System.Drawing.Size(78, 13);
+            this.lblGameNumber.TabIndex = 7;
+            this.lblGameNumber.Text = "Game Number:";
+            // 
+            // lblThingOne
+            // 
+            this.lblThingOne.AutoSize = true;
+            this.lblThingOne.Location = new System.Drawing.Point(9, 239);
+            this.lblThingOne.Name = "lblThingOne";
+            this.lblThingOne.Size = new System.Drawing.Size(60, 13);
+            this.lblThingOne.TabIndex = 8;
+            this.lblThingOne.Text = "Thing One:";
+            // 
+            // lblThingTwo
+            // 
+            this.lblThingTwo.AutoSize = true;
+            this.lblThingTwo.Location = new System.Drawing.Point(12, 265);
+            this.lblThingTwo.Name = "lblThingTwo";
+            this.lblThingTwo.Size = new System.Drawing.Size(61, 13);
+            this.lblThingTwo.TabIndex = 9;
+            this.lblThingTwo.Text = "Thing Two:";
+            // 
+            // tbThingOne
+            // 
+            this.tbThingOne.Location = new System.Drawing.Point(93, 236);
+            this.tbThingOne.Name = "tbThingOne";
+            this.tbThingOne.Size = new System.Drawing.Size(65, 20);
+            this.tbThingOne.TabIndex = 10;
+            // 
+            // tbThingTwo
+            // 
+            this.tbThingTwo.Location = new System.Drawing.Point(93, 262);
+            this.tbThingTwo.Name = "tbThingTwo";
+            this.tbThingTwo.Size = new System.Drawing.Size(65, 20);
+            this.tbThingTwo.TabIndex = 11;
+            // 
+            // btnCompareStrings
+            // 
+            this.btnCompareStrings.Location = new System.Drawing.Point(37, 314);
+            this.btnCompareStrings.Name = "btnCompareStrings";
+            this.btnCompareStrings.Size = new System.Drawing.Size(102, 51);
+            this.btnCompareStrings.TabIndex = 12;
+            this.btnCompareStrings.Text = "Compare Strings";
+            this.btnCompareStrings.UseVisualStyleBackColor = true;
             // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(193, 559);
+            this.Controls.Add(this.btnCompareStrings);
+            this.Controls.Add(this.tbThingTwo);
+            this.Controls.Add(this.tbThingOne);
+            this.Controls.Add(this.lblThingTwo);
+            this.Controls.Add(this.lblThingOne);
+            this.Controls.Add(this.lblGameNumber);
+            this.Controls.Add(this.tbGameNumber);
             this.Controls.Add(this.btnExitProgram);
             this.Controls.Add(this.btnWhoWins);
             this.Controls.Add(this.tbIslandersScore);
@@ -115,6 +187,13 @@
         private System.Windows.Forms.TextBox tbIslandersScore;
         private System.Windows.Forms.Button btnWhoWins;
         private System.Windows.Forms.Button btnExitProgram;
+        private System.Windows.Forms.TextBox tbGameNumber;
+        private System.Windows.Forms.Label lblGameNumber;
+        private System.Windows.Forms.Label lblThingOne;
+        private System.Windows.Forms.Label lblThingTwo;
+        private System.Windows.Forms.TextBox tbThingOne;
+        private System.Windows.Forms.TextBox tbThingTwo;
+        private System.Windows.Forms.Button btnCompareStrings;
     }
 }
 

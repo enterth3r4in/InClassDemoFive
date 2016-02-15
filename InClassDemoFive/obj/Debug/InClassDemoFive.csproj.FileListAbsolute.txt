@@ -1,1 +1,9 @@
 C:\Users\as600\Documents\GitHub\InClassDemoFive\InClassDemoFive\bin\Debug\InClassDemoFive.exe.config
+C:\Users\as600\Documents\GitHub\InClassDemoFive\InClassDemoFive\bin\Debug\InClassDemoFive.exe
+C:\Users\as600\Documents\GitHub\InClassDemoFive\InClassDemoFive\bin\Debug\InClassDemoFive.pdb
+C:\Users\as600\Documents\GitHub\InClassDemoFive\InClassDemoFive\obj\Debug\InClassDemoFive.csprojResolveAssemblyReference.cache
+C:\Users\as600\Documents\GitHub\InClassDemoFive\InClassDemoFive\obj\Debug\InClassDemoFive.formMain.resources
+C:\Users\as600\Documents\GitHub\InClassDemoFive\InClassDemoFive\obj\Debug\InClassDemoFive.Properties.Resources.resources
+C:\Users\as600\Documents\GitHub\InClassDemoFive\InClassDemoFive\obj\Debug\InClassDemoFive.csproj.GenerateResource.Cache
+C:\Users\as600\Documents\GitHub\InClassDemoFive\InClassDemoFive\obj\Debug\InClassDemoFive.exe
+C:\Users\as600\Documents\GitHub\InClassDemoFive\InClassDemoFive\obj\Debug\InClassDemoFive.pdb
