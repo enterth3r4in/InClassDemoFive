@@ -330,7 +330,7 @@
             this.lbLocations.FormattingEnabled = true;
             this.lbLocations.Location = new System.Drawing.Point(198, 218);
             this.lbLocations.Name = "lbLocations";
-            this.lbLocations.Size = new System.Drawing.Size(135, 82);
+            this.lbLocations.Size = new System.Drawing.Size(212, 82);
             this.lbLocations.TabIndex = 25;
             this.lbLocations.SelectedIndexChanged += new System.EventHandler(this.lbLocations_SelectedIndexChanged);
             // 
